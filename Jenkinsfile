@@ -23,6 +23,11 @@ pipeline {
                     echo "Hello, This is Build"
                     echo "Project: $PROJECT"
                     sleep 15
+                    echo "Hello ${params.PERSON}"
+                    echo "Biography: ${params.BIOGRAPHY}"
+                    echo "Toggle: ${params.TOGGLE}"
+                    echo "Choice: ${params.CHOICE}"
+                    echo "Password: ${params.PASSWORD}"
                     """
                 }
             }
